@@ -1,0 +1,20 @@
+﻿@model WebApplication2.Models.Student
+@{
+}
+
+<h1 class="fw-bold">Add Student Information:</h1>
+<div class="container mt-5 border border-dark p-5">
+    <form asp-action="CreateOrEdit" asp-controller="Student" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" asp-for="Name" class="form-control border border-secondary">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" asp-for="Address" class="form-control border border-secondary">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="number" asp-for="Phone" class="form-control border border-secondary">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" asp-for="Email" class="form-control border border-secondary">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
